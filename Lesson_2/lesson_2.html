@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lesson 2</title>
+        <script src="../build/react.js"></script>
+        <script src="../build/react-dom.js"></script>
+        <script src="../build/browser.min.js"></script>
+    </head>
+    <body>
+        <div id="react_output"></div>
+        <script type="text/babel">
+
+            var brands = ['APPLE','MI','HUAWEI','OPPO','SAMSUNG'];
+
+            ReactDOM.render(
+            
+                <div>
+                {
+                    brands.map(function (brand) {
+                        return <div> Brand is {brand}!</div>
+                    })
+                }
+                </div>,
+                document.getElementById('react_output')
+            );
+
+        </script>
+    </body>
+</html>
