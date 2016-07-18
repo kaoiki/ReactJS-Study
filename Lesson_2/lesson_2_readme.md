@@ -9,7 +9,7 @@ react-dom.js
 browser.min.js
 ```
 
-**browser.min.js用途是将JSX愈发转为JS语法，生产环境时要把使用JSX语法的片段通过Babel编译后再引用**
+**browser.min.js用途是将JSX语法转为JS语法，生产环境时要把使用JSX语法的片段通过Babel编译后再引用**
 
 >例如将src目录下的js文件进行编译并存入build目录下，$ babel src --out-dir build
 
