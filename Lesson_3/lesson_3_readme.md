@@ -36,7 +36,7 @@ ReactDOM.render(
 
 `var htmlArr = [<h1>Hello, KaOiKi!</h1>,<h2>This is H2</h2>]`
 
-**生成一个名字为htmlArr的数组，里面保存了两个HTML标签节点**
+**生成一个名字为`htmlArr`的数组，里面保存了两个HTML标签节点**
 
 ***
 
