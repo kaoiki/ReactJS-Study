@@ -49,7 +49,7 @@ ReactDOM.render(
 
 `return <h1>{this.props.what},{this.props.name}</h1>`
 
-**被引用的函数就是输出如上一段内容，和之前一样，使用了两个`{}`占位操作，其内部用来输出当前组件的两个属性，属性名字分别为`what`和`name`**
+**被引用的函数就是输出如上一段内容，和之前一样，使用了两个`{}`占位操作，其内部用来输出当前组件的两个属性，属性名字分别为`what`和`name`，通过`this.props`对象获取属性内容**
 
 ***
 
@@ -75,4 +75,15 @@ type=text/babel
 
 >JSX需要加上该表情，因为JSX语法与JS不兼容，用来告知Browser对其转换。
 
+`SayMessage`
+
+>组件名称首字母必须大写，每个组件都需要有自己的render方法，用以输出。
+
+`<SayMessage />`
+
+>使用该语句后，会自动生成一个`SayMessage`的实例，记得此时必须有`/`关闭该组件，否则会无法输出
+
+`className`及`htmlFor`
+
+>`class`属性及`for`属性要写成`className`及`htmlFor`，因为`class`及`for`为JS保留字，具体写法后续课程会写到，此处只是有个概念
 
