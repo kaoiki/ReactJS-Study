@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Lesson 5</title>
+        <script src="../build/react.js"></script>
+        <script src="../build/react-dom.js"></script>
+        <script src="../build/browser.min.js"></script>
+    </head>
+    <body>
+        <div id="react_output"></div>
+        <script type="text/babel">
+
+            var BrandsList = React.createClass({
+                render: function() {
+                    return (
+                        <ol>
+                            {
+                                React.Children.map(this.props.children, function(child) {
+                                    return <li>{child}</li>
+                                })
+                            }
+                        </ol>
+                    );
+                }
+            });
+
+            ReactDOM.render(
+                <BrandsList>
+                    <span>Apple</span>
+                    <span>Huawei</span>
+                    <span>Mi</span>
+                    <span>Samsung</span>
+                </BrandsList>,
+                document.getElementById('react_output')
+            );
+
+        </script>
+    </body>
+</html>
